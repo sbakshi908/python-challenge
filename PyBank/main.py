@@ -49,11 +49,16 @@ print(f'Financial Analysis')
 print(f'----------------------------')
 print(f'Total  Dates: {total_dates}')
 print(f'Average Chnage: {avg_change}')
-#print("monthly change")
-#print(monthly_change)
 print(f'greatest profit increase: {greatst_increase} was in {max_month}')
 print(f'greatest profit loss: {greatst_decrease} was in {min_month}')
 
-
-
-
+#write to txt file 
+write_only = os.path.join("Analysis", "PyBank_Results.txt") 
+with open(write_only, "w") as PyBank_txt:
+    PyBank_txt.write(f'Financial Analysis\n')
+    PyBank_txt.write(f'------------------\n')
+    PyBank_txt.write(f'Total Dates: {total_dates} \n')
+    PyBank_txt.write(f'Average Chnage: {avg_change}\n')
+    PyBank_txt.write(f'The greatest profit increase: {greatst_increase} was in {max_month}\n')
+    PyBank_txt.write(f'The greatest profit loss: {greatst_decrease} was in {min_month}\n')
+    PyBank_txt.close()

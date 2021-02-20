@@ -1,0 +1,6 @@
+Financial Analysis
+------------------
+Total Dates: 86 
+Average Chnage: -2315.1176470588234
+The greatest profit increase: 1926159 was in Feb-2012
+The greatest profit loss: -2196167 was in Sep-2013
